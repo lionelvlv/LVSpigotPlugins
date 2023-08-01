@@ -1,0 +1,106 @@
+[15:43:11] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15:43:13] [ServerMain/INFO]: Loaded 7 recipes
+[15:43:14] [Server thread/INFO]: Starting minecraft server version 1.20.1
+[15:43:14] [Server thread/INFO]: Loading properties
+[15:43:15] [Server thread/INFO]: This server is running Paper version git-Paper-100 (MC: 1.20.1) (Implementing API version 1.20.1-R0.1-SNAPSHOT) (Git: f402f89)
+[15:43:15] [Server thread/INFO]: Using 4 threads for Netty based IO
+[15:43:15] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[15:43:15] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[15:43:15] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
+[15:43:15] [Server console handler/ERROR]: [TerminalConsole] Failed to read console input
+java.io.IOException: The handle is invalid
+	at java.io.FileInputStream.readBytes(Native Method) ~[?:?]
+	at java.io.FileInputStream.read(FileInputStream.java:276) ~[?:?]
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:282) ~[?:?]
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:343) ~[?:?]
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:270) ~[?:?]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:313) ~[?:?]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:188) ~[?:?]
+	at java.io.InputStreamReader.read(InputStreamReader.java:177) ~[?:?]
+	at java.io.BufferedReader.fill(BufferedReader.java:162) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:329) ~[?:?]
+	at java.io.BufferedReader.readLine(BufferedReader.java:396) ~[?:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:180) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[terminalconsoleappender-1.3.0.jar:?]
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:102) ~[paper-1.20.1.jar:git-Paper-100]
+	Suppressed: java.io.IOException: The handle is invalid
+		at java.io.FileDescriptor.close0(Native Method) ~[?:?]
+		at java.io.FileDescriptor.close(FileDescriptor.java:297) ~[?:?]
+		at java.io.FileInputStream$1.close(FileInputStream.java:459) ~[?:?]
+		at java.io.FileDescriptor.closeAll(FileDescriptor.java:355) ~[?:?]
+		at java.io.FileInputStream.close(FileInputStream.java:457) ~[?:?]
+		at java.io.BufferedInputStream.close(BufferedInputStream.java:481) ~[?:?]
+		at sun.nio.cs.StreamDecoder.implClose(StreamDecoder.java:366) ~[?:?]
+		at sun.nio.cs.StreamDecoder.close(StreamDecoder.java:204) ~[?:?]
+		at java.io.InputStreamReader.close(InputStreamReader.java:192) ~[?:?]
+		at java.io.BufferedReader.close(BufferedReader.java:525) ~[?:?]
+		at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:183) ~[terminalconsoleappender-1.3.0.jar:?]
+		at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[terminalconsoleappender-1.3.0.jar:?]
+		at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:102) ~[paper-1.20.1.jar:git-Paper-100]
+[15:43:15] [Server thread/INFO]: Default game type: SURVIVAL
+[15:43:15] [Server thread/INFO]: Generating keypair
+[15:43:15] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:43:15] [Server thread/INFO]: Using default channel type
+[15:43:15] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[15:43:15] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[15:43:16] [Server thread/INFO]: [JoinNLeave] Loading server plugin JoinNLeave v1.0-SNAPSHOT
+[15:43:16] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[15:43:16] [Server thread/INFO]: Preparing level "world"
+[15:43:16] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:43:17] [Server thread/INFO]: Time elapsed: 218 ms
+[15:43:17] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[15:43:17] [Server thread/INFO]: Time elapsed: 27 ms
+[15:43:17] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[15:43:17] [Server thread/INFO]: Time elapsed: 26 ms
+[15:43:17] [Server thread/INFO]: [JoinNLeave] Enabling JoinNLeave v1.0-SNAPSHOT
+[15:43:17] [Server thread/INFO]: Running delayed init tasks
+[15:43:17] [Server thread/INFO]: Done (2.392s)! For help, type "help"
+[15:43:17] [Server thread/INFO]: Timings Reset
+[15:44:19] [User Authenticator #0/INFO]: UUID of player PapyRice is a857685b-f45d-4573-86bb-2530591fbdce
+[15:44:20] [Server thread/INFO]: PapyRice has joined for the first time.
+[15:44:20] [Server thread/INFO]: PapyRice[/127.0.0.1:60139] logged in with entity id 160 at ([world]-9.5, 71.0, 7.5)
+[15:44:30] [Server thread/INFO]: PapyRice lost connection: Disconnected
+[15:44:30] [Server thread/INFO]: PapyRice has left.
+[15:44:31] [User Authenticator #0/INFO]: UUID of player PapyRice is a857685b-f45d-4573-86bb-2530591fbdce
+[15:44:31] [Server thread/INFO]: PapyRice has landed on our map. New adventures await!
+[15:44:31] [Server thread/INFO]: PapyRice[/127.0.0.1:60175] logged in with entity id 235 at ([world]-25.69999998807907, 67.0, 23.712386220620793)
+[15:44:34] [Server thread/INFO]: PapyRice lost connection: Disconnected
+[15:44:34] [Server thread/INFO]: PapyRice has left.
+[15:44:36] [User Authenticator #0/INFO]: UUID of player PapyRice is a857685b-f45d-4573-86bb-2530591fbdce
+[15:44:36] [Server thread/INFO]: PapyRice has spawned into the server. Game on!
+[15:44:36] [Server thread/INFO]: PapyRice[/127.0.0.1:60184] logged in with entity id 240 at ([world]-25.69999998807907, 67.0, 23.712386220620793)
+[15:44:41] [Server thread/INFO]: PapyRice lost connection: Disconnected
+[15:44:41] [Server thread/INFO]: PapyRice has left.
+[15:44:42] [User Authenticator #0/INFO]: UUID of player PapyRice is a857685b-f45d-4573-86bb-2530591fbdce
+[15:44:42] [Server thread/INFO]: PapyRice has logged in. Our team power just leveled up!
+[15:44:42] [Server thread/INFO]: PapyRice[/127.0.0.1:60192] logged in with entity id 257 at ([world]-37.90301197274003, 68.0, 31.546563591091257)
+[15:44:47] [Server thread/INFO]: PapyRice lost connection: Disconnected
+[15:44:47] [Server thread/INFO]: PapyRice has left.
+[15:45:02] [Server thread/INFO]: Stopping server
+[15:45:02] [Server thread/INFO]: [JoinNLeave] Disabling JoinNLeave v1.0-SNAPSHOT
+[15:45:02] [Server thread/INFO]: Saving players
+[15:45:02] [Server thread/INFO]: Saving worlds
+[15:45:02] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15:45:02] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[15:45:02] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[15:45:02] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[15:45:03] [Server thread/INFO]: [ChunkHolderManager] Saved 951 block chunks, 693 entity chunks, 0 poi chunks in world 'world' in 1.21s
+[15:45:03] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[15:45:03] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[15:45:03] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[15:45:03] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[15:45:03] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[15:45:04] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_nether' in 0.50s
+[15:45:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[15:45:04] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[15:45:04] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[15:45:04] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[15:45:04] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[15:45:04] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'world_the_end' in 0.11s
+[15:45:04] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[15:45:04] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[15:45:04] [Server thread/INFO]: Flushing Chunk IO
+[15:45:04] [Server thread/INFO]: Closing Thread Pool
+[15:45:04] [Server thread/INFO]: Closing Server
