@@ -42,9 +42,9 @@ public class JoinLeaveListener implements Listener {
                 RandomJoinMessage = " has joined the game.";
             }
 
-            player.sendMessage(ChatColor.GOLD + player.getDisplayName() + ChatColor.YELLOW + RandomJoinMessage);
+            e.setJoinMessage(ChatColor.GOLD + player.getDisplayName() + ChatColor.YELLOW + RandomJoinMessage);
         } else if (! player.hasPlayedBefore()) {
-            player.sendMessage(ChatColor.DARK_PURPLE + player.getDisplayName() + ChatColor.LIGHT_PURPLE + " has joined for the first time.");
+            e.setJoinMessage(ChatColor.DARK_PURPLE + player.getDisplayName() + ChatColor.LIGHT_PURPLE + " has joined for the first time.");
 
         }
     }
