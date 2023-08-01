@@ -1,0 +1,4 @@
+name: JoinNLeave
+version: '1.0-SNAPSHOT'
+main: me.lionelv.joinnleave.JoinNLeave
+api-version: '1.20'
