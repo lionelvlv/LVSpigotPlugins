@@ -5,12 +5,20 @@ api-version: '1.20'
 commands:
   god:
     description: Become invincible
-    permission: lv.command.god
     usage: /<command>
     aliases:
       - lionelmode
       - pro
   feed:
-    permission: lv.command.feed
     description: Feed yourself
     usage: /<command>
+permissions:
+  lv.command.god:
+    description: permission to run /god
+    default: op
+  lv.command.feed:
+    description: permission to run /feed
+    default: op
+    children:
+      permissions.explode: true #if feed then you get explode
+      permissions.kill: false  #if feed you don't get kill
