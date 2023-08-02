@@ -15,7 +15,7 @@ public class FlyCommand implements CommandExecutor {
         if (commandSender instanceof Player p) {
             if (p.hasPermission("lv.command.fly")) {
                 if (strings.length == 0){
-                    if (!p.getAllowFlight()) {
+                    if (p.getAllowFlight()) {
                         p.setAllowFlight(false);
                         p.sendMessage(ChatColor.RED + "Flying disabled.");
                     } else {
