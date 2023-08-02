@@ -16,7 +16,7 @@ public class FartCommand implements CommandExecutor {
             if(strings.length == 0){
                 p.sendMessage(ChatColor.RED + "You just farted on yourself. nastyyy hoe");
                 p.setHealth(0);
-                p.playSound(p.getLocation(), Sound.BLOCK_HONEY_BLOCK_FALL, 10.0f, 1.0f);
+                p.playSound(p.getLocation(), Sound.ENTITY_GHAST_DEATH, 10.0f, 1.0f);
             }
             else {
                 String playerName = strings[0];
@@ -28,7 +28,7 @@ public class FartCommand implements CommandExecutor {
                     target.sendMessage(ChatColor.RED + "you got farted on by " + p.getDisplayName());
                     target.setHealth(0);
                     p.sendMessage(ChatColor.GREEN + "you farted on " + target.getDisplayName());
-                    target.playSound(target.getLocation(), Sound.BLOCK_HONEY_BLOCK_FALL, 10.0f, 1.0f);
+                    target.playSound(target.getLocation(), Sound.ENTITY_GHAST_DEATH, 10.0f, 1.0f);
                 }
             }
         }
