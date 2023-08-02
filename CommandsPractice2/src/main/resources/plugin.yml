@@ -28,3 +28,6 @@ permissions:
     children:
       permissions.explode: true #if feed then you get explode
       permissions.kill: false  #if feed you don't get kill
+  lv.command.fart:
+    description: permission to run /fart
+    default: op

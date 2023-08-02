@@ -13,6 +13,7 @@ public class FartCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if(commandSender instanceof Player p){
+            if (p.hasPermission("lv.command.fart")){
             if(strings.length == 0){
                 p.sendMessage(ChatColor.RED + "You just farted on yourself. nastyyy hoe");
                 p.setHealth(0);
@@ -30,6 +31,10 @@ public class FartCommand implements CommandExecutor {
                     p.sendMessage(ChatColor.GREEN + "you farted on " + target.getDisplayName());
                     target.playSound(target.getLocation(), Sound.ENTITY_GHAST_DEATH, 10.0f, 1.0f);
                 }
+            }
+            }
+            else {
+                p.sendMessage("You do not have permission to fart :(");
             }
         }
 
