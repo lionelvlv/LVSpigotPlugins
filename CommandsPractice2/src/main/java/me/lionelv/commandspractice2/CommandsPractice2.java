@@ -1,9 +1,6 @@
 package me.lionelv.commandspractice2;
 
-import me.lionelv.commandspractice2.commands.FartCommand;
-import me.lionelv.commandspractice2.commands.GodCommand;
-import me.lionelv.commandspractice2.commands.RepeatCommand;
-import me.lionelv.commandspractice2.commands.feed;
+import me.lionelv.commandspractice2.commands.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class CommandsPractice2 extends JavaPlugin {
@@ -14,6 +11,7 @@ public final class CommandsPractice2 extends JavaPlugin {
         getCommand("feed").setExecutor(new feed());
         getCommand("repeat").setExecutor(new RepeatCommand());
         getCommand("fart").setExecutor(new FartCommand());
+        getCommand("fly").setExecutor(new FlyCommand());
 
     }
 

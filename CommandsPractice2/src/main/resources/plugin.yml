@@ -18,6 +18,9 @@ commands:
   repeat:
     description: Repeat something
     usage: /<command> <args>
+  fly:
+    description: Toggle fly
+    usage: /<command> <args>
 permissions:
   lv.command.god:
     description: permission to run /god
@@ -30,4 +33,7 @@ permissions:
       permissions.kill: false  #if feed you don't get kill
   lv.command.fart:
     description: permission to run /fart
+    default: op
+  lv.command.fly:
+    description: permission to run /fly
     default: op
