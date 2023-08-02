@@ -6,3 +6,9 @@ commands:
   god:
     description: Become invincible
     usage: /<command>
+    aliases:
+      - lionelmode
+      - pro
+  feed:
+    description: Feed yourself
+    usage: /<command>

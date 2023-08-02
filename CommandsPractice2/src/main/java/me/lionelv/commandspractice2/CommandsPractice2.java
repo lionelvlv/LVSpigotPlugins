@@ -1,6 +1,7 @@
 package me.lionelv.commandspractice2;
 
 import me.lionelv.commandspractice2.commands.GodCommand;
+import me.lionelv.commandspractice2.commands.feed;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class CommandsPractice2 extends JavaPlugin {
@@ -8,7 +9,7 @@ public final class CommandsPractice2 extends JavaPlugin {
     @Override
     public void onEnable() {
         getCommand("god").setExecutor(new GodCommand());
-        // Plugin startup logic
+        getCommand("feed").setExecutor(new feed());
 
     }
 
