@@ -5,10 +5,12 @@ api-version: '1.20'
 commands:
   god:
     description: Become invincible
+    permission: lv.command.god
     usage: /<command>
     aliases:
       - lionelmode
       - pro
   feed:
+    permission: lv.command.feed
     description: Feed yourself
     usage: /<command>
