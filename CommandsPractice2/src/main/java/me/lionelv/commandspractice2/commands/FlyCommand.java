@@ -6,6 +6,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.player.PlayerToggleFlightEvent;
 
 public class FlyCommand implements CommandExecutor {
     @Override
@@ -14,11 +15,11 @@ public class FlyCommand implements CommandExecutor {
         if (commandSender instanceof Player p) {
             if (p.hasPermission("lv.command.fly")) {
                 if (strings.length == 0){
-                    if (p.isFlying()) {
-                        p.setFlying(false);
+                    if (!p.getAllowFlight()) {
+                        p.setAllowFlight(false);
                         p.sendMessage(ChatColor.RED + "Flying disabled.");
                     } else {
-                        p.setFlying(true);
+                        p.setAllowFlight(true);
                         p.sendMessage(ChatColor.GREEN + "Flying enabled.");
                     }
             }
@@ -29,12 +30,12 @@ public class FlyCommand implements CommandExecutor {
                         p.sendMessage("This player is not online.");
                     }
                     else {
-                        if (target.isFlying()) {
-                            target.setFlying(false);
+                        if (target.getAllowFlight()) {
+                            target.setAllowFlight(false);
                             target.sendMessage(ChatColor.RED + "Flying disabled.");
                             p.sendMessage(target.getDisplayName() + " has disabled flying.");
                         } else {
-                            target.setFlying(true);
+                            target.setAllowFlight(true);
                             target.sendMessage(ChatColor.GREEN + "Flying enabled.");
                             p.sendMessage(target.getDisplayName() + " has enabled flying.");
                         }
