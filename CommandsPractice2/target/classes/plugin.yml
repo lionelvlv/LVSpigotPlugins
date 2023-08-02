@@ -12,6 +12,12 @@ commands:
   feed:
     description: Feed yourself
     usage: /<command>
+  fart:
+    description: Fart on yourself or something
+    usage: /fart <player>
+  repeat:
+    description: Repeat something
+    usage: /<command> <args>
 permissions:
   lv.command.god:
     description: permission to run /god
