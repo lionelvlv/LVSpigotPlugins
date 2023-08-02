@@ -1,0 +1,8 @@
+name: CommandsPractice2
+version: '1.0-SNAPSHOT'
+main: me.lionelv.commandspractice2.CommandsPractice2
+api-version: '1.20'
+commands:
+  god:
+    description: Become invincible
+    usage: /<command>
